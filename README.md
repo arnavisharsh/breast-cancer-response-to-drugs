@@ -1,6 +1,6 @@
 # breast-cancer-response-to-drugs
 
-2 Words - Personalized Healthcare. With the future of healthcare expanding thanks to machine learning, I created this project to help learn and utilize these resources to take the first steps to enter the field of bioinformatics. Taking advantage of resources and data provided by GDSC, I used breast cancer cell line expression data and created a Logistic Regression Model to learn relationships between expression data and IC50 values in 
+2 Words - **Personalized Healthcare**. With the future of healthcare expanding thanks to machine learning, I created this project to help learn and utilize these resources to take the first steps to enter the field of bioinformatics. Taking advantage of resources and data provided by **GDSC**, I used breast cancer cell line expression data and created a Logistic Regression Model to learn relationships between expression data and IC50 values in 
 
 ## 📖 Table of Contents
 
@@ -10,6 +10,7 @@
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Examples / Screenshots](#examples--screenshots)
+- [Data Reference](#data)
 - [License](#license)
 
 ## 🧠 About
@@ -36,21 +37,23 @@ pip install -r requirements.txt
 
 Run the scripts in order:
 
-1. Data Preprocessing
+**1. Data Preprocessing**
 - jupyter notebook 01_data_preprocessing.ipynb
 
-2. Regression Model
+**2. Regression Model**
 - jupyter notebook 02_regression_model.ipynb
 
-3. Classification Model
+**3. Classification Model**
 - jupyter notebook 03_classification.ipynb
 
-Outputs:
-f1_scores.csv → F1 score per drug.
 
-top_genes.csv → top predictive genes per drug.
+**Outputs:**
 
-skipped_drugs.csv → drugs skipped due to insufficient data.
+**f1_scores.csv** → F1 score per drug.
+
+**top_genes.csv** → top predictive genes per drug.
+
+**skipped_drugs.csv** → drugs skipped due to insufficient data.
 
 ## 📂 Project Structure
 
@@ -98,6 +101,14 @@ BREAST_CANCER_PROJECT/
 ## 📸 Examples / Screenshots
 
 Coming soon — visualizations of IC50 distributions, model performance, and gene importance.
+
+## 📜 Data Reference
+
+Special thanks to GDSC for the wonderfully laid out resources and data used for the project. The following link is where you can find the data used and other resources.
+
+```bash
+https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html 
+```
 
 ## 📜 License
 
