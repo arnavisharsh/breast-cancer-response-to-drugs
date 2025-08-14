@@ -47,11 +47,14 @@ Run the scripts in order:
 
 Outputs:
 f1_scores.csv → F1 score per drug.
+
 top_genes.csv → top predictive genes per drug.
+
 skipped_drugs.csv → drugs skipped due to insufficient data.
 
 ## 📂 Project Structure
 
+```bash
 BREAST_CANCER_PROJECT/
 │
 ├── all_f1_scores/                  # Model F1 score outputs
@@ -90,6 +93,7 @@ BREAST_CANCER_PROJECT/
 ├── .gitignore                       # Files and folders ignored by Git
 ├── README.md                        # Project documentation
 ├── requirements.txt                 # Python dependencies
+```
 
 ## 📸 Examples / Screenshots
 
