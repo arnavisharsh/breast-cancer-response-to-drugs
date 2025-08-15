@@ -11,7 +11,6 @@
 - [Project Structure](#project-structure)
 - [Examples / Screenshots](#examples--screenshots)
 - [Data Reference](#data)
-- [License](#license)
 
 ## 🧠 About
 
@@ -98,6 +97,8 @@ BREAST_CANCER_PROJECT/
 ├── requirements.txt                 # Python dependencies
 ```
 
+(Image folder was also added for the reference images used in the README file)
+
 ## 📸 Examples / Screenshots
 
 ![alt text](images/preprocessing_image.png)
@@ -113,7 +114,3 @@ Special thanks to GDSC for the wonderfully laid out resources and data used for 
 ```bash
 https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html 
 ```
-
-## 📜 License
-
-This project is open source under the MIT License.
