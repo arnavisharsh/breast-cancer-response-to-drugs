@@ -100,7 +100,11 @@ BREAST_CANCER_PROJECT/
 
 ## 📸 Examples / Screenshots
 
-Coming soon — visualizations of IC50 distributions, model performance, and gene importance.
+![alt text](images/preprocessing_image.png)
+
+![alt text](images/regression_image.png)
+
+![alt text](images/classification_image.png)
 
 ## 📜 Data Reference
 
