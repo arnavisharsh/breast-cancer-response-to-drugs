@@ -1,6 +1,6 @@
 # breast-cancer-response-to-drugs
 
-2 Words - **Personalized Healthcare**. With the future of healthcare expanding thanks to machine learning, I created this project to help learn and utilize these resources to take the first steps to enter the field of bioinformatics. Taking advantage of resources and data provided by **GDSC**, I used breast cancer cell line expression data and created a Logistic Regression Model to learn relationships between expression data and IC50 values in 
+2 Words - **Personalized Healthcare**. With the future of healthcare expanding thanks to machine learning, I created this project to help learn and utilize these resources to take the first steps to enter the field of bioinformatics. Taking advantage of resources and data provided by **GDSC**, I used breast cancer cell line expression data and created a Logistic Regression Model to learn relationships between expression data and IC50 values to determine more personalized prescription of drugs. Though a more accurate prescription of drugs relies on a variety of other biological information, my project was driven by expression data and IC50 values (specifically log(IC50) values as determined by GDSC).
 
 ## 📖 Table of Contents
 
@@ -21,6 +21,8 @@ The **goal** of this project was to help me take a dive into the world of bioinf
 Currently, there are models created for 125-127 drugs that are related to the care of breast cancer. These models are saved as 2 different models: model(1) and model(2). Model(1) uses the median IC50 value as the set threshold whereas model(2) takes advantage of KMean-clustering to determine the threshold. The 3 different notesbooks show my process in learning how to preprocess the data as well as reaching issues with trying to train different regression models with the available data. However, each notebook shows the steps I took as well as instances of my thought process of the results and how I could approach certain issues. Additionally, these saved models can then be combined with the top_genes (1 or 2 depending on the model) to then predict whether a cell is a responder or a non-responder to a specific drug.
 
 This logic will be used in the future as I further the project in hopes to create a API to filter this information easily. By using this created API, I hope to then create a visual UI to help make it easier for others to use this information to their benefit. The most important thing I wish to do in the future is to learn to better paramaterize the models to create more effective and accurate models. Currently, the average F1 score for model 1 is around 0.73 and for model 2 is around 0.77. This is the greatest limitation with the model at this time.
+
+Additionally, with the help of the second dataset which was found later in the project (which is still growing to account for more drugs), my goal is to help add to the model by using the preprocessed data to use more accurate markers for responsiveness.
 
 ## 🛠️ Installation
 
@@ -111,6 +113,26 @@ BREAST_CANCER_PROJECT/
 
 Special thanks to GDSC for the wonderfully laid out resources and data used for the project. The following link is where you can find the data used and other resources.
 
+**Home Page**
+
 ```bash
-https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html 
+https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html
+```
+
+**Expression**
+
+```bash
+https://www.cancerrxgene.org/downloads/bulk_download
+```
+
+**Drug dataset**
+
+```bash
+https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources//Drug_screening_data.html
+```
+
+For **future model creation**, the following dataset with predetermined thresholds for responders would be beneficial to use to help increase the F1 score of the model.
+
+```bash
+https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources//Drug_screening_data.html
 ```
